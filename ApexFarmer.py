@@ -45,23 +45,12 @@ while True:
                 time.sleep(0.5)
 
     if pyautogui.locateOnScreen('space.png', region=(676,777,619,304), grayscale=True, confidence=0.6) != None:
-     keyboard.press_and_release('space')
+        keyboard.press_and_release('space')
 
     if pyautogui.locateOnScreen('yes.png', region=(506,550,912,304), grayscale=True, confidence=0.6) != None:
          pyautogui.click(850, 713)
          time.sleep(0.5)
          pyautogui.click(850, 713)
-
-    if pyautogui.locateOnScreen('jump.PNG', region=(715,743,513,304), grayscale=True, confidence=0.9) != None:
-         keyboard.press_and_release('Enter')
-         time.sleep(0.5)
-         keyboard.press_and_release('L')
-         time.sleep(0.5)
-         keyboard.press_and_release('O')
-         time.sleep(0.5)
-         keyboard.press_and_release('L')
-         time.sleep(0.5)
-         keyboard.press_and_release('Enter')
 
     if pyautogui.locateOnScreen('Contunue.PNG', region=(773,581,379,304), grayscale=True, confidence=0.6) != None:
          pyautogui.click(952, 717)
@@ -72,3 +61,7 @@ while True:
          pyautogui.click(952, 717)
          time.sleep(0.5)
          pyautogui.click(952, 717)
+
+    if pyautogui.locateOnScreen('escape.PNG', region=(45,970,105,70), grayscale=True, confidence=0.6) != None:
+         keyboard.press_and_release('esc')
+         time.sleep(0.5)
